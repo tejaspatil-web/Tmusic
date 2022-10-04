@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1," />
+
+    <title>Tmusic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#000000" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-black">
+    <style>
+      .mm {
+        border: 2px solid rgb(16, 16, 16);
+        width: 100%;
+        border-radius: 25px;
+      }
+      .foot {
+        width: 100%;
+        height: 8vh;
+        margin-top: 30px;
+        border: 2px solid white;
+        background-color: black;
+      }
+
+      .copyright {
+        color: aliceblue;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .line {
+        border: 1px solid white;
+      }
+
+      .cards {
+        margin-bottom: 50px;
+        background-color: black;
+      }
+    </style>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <div class="bg-black">
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: 'League Gothic', sans-serif;
+              font-size: x-large;
+              color: white;
+              margin-top: 7px;
+            "
+          >
+            <img
+              src="./Logo.png"
+              alt=""
+              width="44"
+              height="40"
+              class="d-inline-block"
+              style="margin-left: 20px; margin-bottom: 10px"
+            /><lable style="margin-left: 5px; font-size: 28px; margin-top: 10px"
+              >Tmusic</lable
+            >
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.facebook.com/profile.php?id=100007521840381">Facebook</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.instagram.com/itz_tejas.143/?hl=en">Instagram</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/itz_tejas.143/?hl=en">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100007521840381">Facebook</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./contact.html">Feedback</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- COROUSEL -->
+
+      <div class="container" style="margin-bottom: 10px; margin-top: 10px">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <!-- <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-Pirate-Music-Logo-Wallpaper-Computer.jpg"
+                
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.wallpaperup.com/uploads/wallpapers/2012/08/04/8082/e7db7515d6a0709cc36ad522dcb39d45-700.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/155/735/652/minimalistic-music-typography-black-background-1920x1200-entertainment-music-hd-art-wallpaper-preview.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://wallpaperaccess.com/full/1926289.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5c98f5e87980b3372c8b2493/1553757676668-VA8WY3PYFW6KTLRSGSGD/signs-of-church-health.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/589/726/320/music-text-speakers-black-background-1920x1200-entertainment-music-hd-art-wallpaper-preview.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://p4.wallpaperbetter.com/wallpaper/861/311/587/music-stereo-minigun-black-background-1920x1200-entertainment-music-hd-art-wallpaper-preview.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="cards" style="display: absolute">
+        <div class="row row-cols-1 row-cols-md-4 g-3" style="margin: 0px 10px">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/Ol8YY9ycH00/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">|Namo Namo|</h5>
+                <p class="card-text text-uppercase">
+                  ➟Singer - Amit Trivedi.
+                  <br>➟Lyricist - Amitabh Bhattacharya.
+                  <br>➟Song - nmo nmo
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Namo Namo  Lyrical  Kedarnath  Sushant Rajput  Sara Ali Khan  Amit Trivedi  Amitabh B.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/cs1e0fRyI18/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">|HAWAYEIN|</h5>
+                <p class="card-text">
+                  ➟ MUSIC-PRITAM.
+                  <br>➟ LYRICS- IRSHAD KAMIL. 
+                  <br>➟ SINGER- ARIJIT SINGH.
+                
+              
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Hawayein Lyric Video  Jab Harry Met SejalShah Rukh Khan AnushkaArijit SinghPritam.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/1qeujW9f4So/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">|Kesariya|</h5>
+                <p class="card-text text-uppercase">
+                  ➟ Music - Pritam.
+                  <br>➟Lyrics - Amitabh Bhattacharya.
+                  <br>➟Singer - Arijit Singh.
+                  
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Kesariya  Brahmāstra  Ranbir Kapoor  Alia Bhatt  Pritam  Arijit Singh  Amitabh Bhattacharya.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEjJ-SCVmQRGvJtp_Oq8WwZ7Ztl6XAhNqaLG6prORPgxh0lK6xmQ1zOgQrVmjR5tKvHC8WeKoab5CD8jEzzVqjvymoq-P2GpDohYGufRkRJwvUtoOYODdOtuiX9XLMP3RAy3qu97qhLQdZlCs_cuGH1iuS32GPiiry_v2ke_vaY0kM9bT0qPkrBPOMNA=s16000"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">|Maiyya Mainu|</h5>
+                <p class="card-text text-uppercase">
+                  ➟Music - Sachet-Parampara
+                  <br>➟Lyrics - Shellee
+                  <br>➟Singer - Sachet Tandon
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Maiyya Mainu  Lyrical  Jersey  Shahid Kapoor Mrunal Thakur SachetParampara Shellee  Gowtam T.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://s2.dmcdn.net/v/JtZ1z1Oyqgi_pj2Hm/x1080"
+                
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">|Baarish Ban Jaana|</h5>
+                <p class="card-text text-uppercase">
+                  ➟ Singer - Payal Dev & Stebin Ben 
+                  <br>➟ Music Composer - Payal Dev
+                  <br>➟ Lyrics - Kunaal Vermaa 
+                  <br>➟ Music Producer - Aditya Dev
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./Baarish_Ban_Jaana_Official_Video_(getmp3.pro).mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCL6nHRv-5XRaicmNfM9deudGLm78niEANXw&usqp=CAU"
+                class="card-img-top h-75"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">|Faded|</h5>
+                <p class="card-text text-uppercase">
+                  
+➟Lyrics - Alan Walker
+<br>➟Video produced by - Bror Bror
+<br>➟Directors - Rikkard & Tobias Häggbom
+
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Alan Walker  Faded.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/vdbP_3o73qI/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title ">|Jaan Nisaar|</h5>
+                <p class="card-text">
+                  ➟Song - Jaan 'Nisaar (Arijit)
+                  <br>➟Singer - Arijit Singh
+                  <br>➟Lyricist - Amitabh Bhattacharya
+                  <br>➟Directed by - Abhishek Kapoor 
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Jaan Nisaar  Lyrical  Kedarnath Arijit Singh  Sushant Singh Rajput  Sara Ali Khan Amit Trivedi.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/K-Ts-NFR62o/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title">|Jab Tak|</h5>
+                <p class="card-text">
+                  ➟Song - Jab Tak
+                  <br>➟Singer - Armaan Malik
+                  <br>➟Music Director - Amaal Mallik
+                  <br>➟Lyrics - Manoj Muntashir
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - JAB TAK Full Video  MS DHONI THE UNTOLD STORY  Armaan Malik Amaal Mallik Sushant Singh Rajput.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/ZxiETzt9icM/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title">|KHAIRIYAT|</h5>
+                <p class="card-text">
+                  ➟Song - KHAIRIYAT
+                  ➟Singer - Arijit Singh
+                  <br>➟Music - Pritam
+                  <br>➟Lyrics - Amitabh Bhattacharya
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Full Song KHAIRIYAT BONUS TRACK  CHHICHHORE  Sushant Shraddha  Pritam Amitabh BArijit Singh.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/g-sG2RDoLmM/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title">|Vaaste|</h5>
+                <p class="card-text">
+                  ➟Singers - Dhvani Bhanushali & Nikhil D'Souza
+                  <br>➟Music - Tanishk Bagchi 
+                  <br>➟Lyrics - Arafat Mehmood
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Vaaste Song Dhvani Bhanushali Tanishk Bagchi  Nikhil D  Bhushan Kumar  Radhika Rao Vinay Sapru.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/pB9GZfY82TM/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title">|Piya O Re Piya|</h5>
+                <p class="card-text">
+                  ➟Singer - Atif Aslam & Shreya Ghoshal
+                  <br>➟Music Director - Sachin Jigar
+                  <br>➟Lyrics Writer - Priya Panchal
+              
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Piya O Re Piya Sad  Video Song  Tere Naal Love Ho Gaya  Riteish Deshmukh  Genelia DSouza.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/saYfjjUQ6xw/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              />
+              <div class="card-body text-uppercase">
+                <h5 class="card-title">|Tera Fitoor|</h5>
+                <p class="card-text">
+                  ➟ Song - Tera Fitoor
+                  <br>➟ Singer - Arijit Singh
+                  <br>➟Music - Himesh Reshammiya. 
+                  <br>➟Lyrics - Kumaar. 
+              
+                </p>
+                <audio
+                  class="mm"
+                  controls
+                  src="./y2mate.com - Tera Fitoor  Lyrical  Genius 2018  Arijit Singh  Himesh Reshammiya.mp3"
+                  type="audio/mp3"
+                ></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <p class="copyright bg-black">Copyright &#169 2022 All Rights Reserved By Tejas Patil</p>
+  </body>
+</html>
